@@ -147,7 +147,7 @@ let poppedCount=0;
 messages.forEach((m,i)=>{const b=document.createElement('button');b.className='balloon';b.setAttribute('aria-label','Pop balloon '+(i+1));b.textContent='♥';b.addEventListener('click',()=>{if(b.classList.contains('popped'))return;document.getElementById('balloonMsg').textContent=m;b.classList.add('popped');poppedCount++;document.getElementById('balloonProgress').textContent=poppedCount+' of 5 balloons popped.';if(poppedCount===5){document.getElementById('balloonProgress').textContent='Your letter is waiting… ♥';setTimeout(()=>showStage('letter'),1400);}});balloonBox.append(b)});
 
 
-const music=document.getElementById('bgMusic'),musicToggle=document.getElementById('musicToggle');music.volume=.22;
+const music=document.getElementById('bgMusic'),musicToggle=document.getElementById('musicToggle');music.volume=.100;
 musicToggle.addEventListener('click',async()=>{try{if(music.paused){await music.play();musicToggle.textContent='♫ Pause music';}else{music.pause();musicToggle.textContent='♫ Play music';}}catch(e){musicToggle.textContent='♫ Add piano track';}});
 
 function openLetter(){document.getElementById('letterText').classList.add('open');document.getElementById('envelope').style.display='none'}
