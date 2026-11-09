@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090f28">
+<title>Happy Birthday, Wifey ♡</title>
+<style>
+:root{--navy:#090f28;--navy2:#111b3b;--pink:#ff6eaa;--rose:#ffb4ce;--gold:#e9c77a;--cream:#fff4e9;--muted:#c7c6d7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#24305b 0%,var(--navy) 54%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:43px 43px;mask-image:linear-gradient(to bottom,black,transparent 80%);z-index:-1}
+button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,[role=button]:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.wrap{width:min(1080px,92%);margin:auto}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:11px Arial,sans-serif}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:50px 18px;position:relative}.hero-card{width:min(650px,100%);padding:52px 24px;border:1px solid #d9b87966;border-radius:28px;background:linear-gradient(145deg,#192449dd,#0c1430ee);box-shadow:0 25px 90px #0008;position:relative;overflow:hidden}
+.heart{font-size:48px;color:var(--pink);text-shadow:0 0 28px #ff6eaa88;animation:pulse 1.7s infinite}.countdown{display:flex;justify-content:center;gap:10px;margin:22px auto 0;flex-wrap:wrap}.countdown div{min-width:68px;padding:10px 12px;border:1px solid #e9c77a55;border-radius:12px;background:#ffffff09}.countdown strong{display:block;font-size:24px;color:var(--gold);font-weight:normal}.countdown small{font:10px Arial,sans-serif;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}.float-heart{position:fixed;bottom:-30px;color:#ff8fba88;pointer-events:none;z-index:5;animation:floatUp 8s linear forwards}@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}.photo img{cursor:zoom-in}.lightbox{display:none;position:fixed;inset:0;background:#050817ed;z-index:20;align-items:center;justify-content:center;padding:20px}.lightbox.show{display:flex}.lightbox img{max-width:min(92vw,900px);max-height:85svh;object-fit:contain;border:8px solid #fff7ed;box-shadow:0 20px 70px #0009}.lightbox button{position:absolute;top:18px;right:20px;border:1px solid #ffffff66;background:#ffffff18;color:white;border-radius:50%;width:44px;height:44px;font:24px Arial}.to-top{position:fixed;right:16px;bottom:16px;z-index:8;border:1px solid #e9c77a77;background:#111b3bee;color:var(--cream);border-radius:50%;width:44px;height:44px;font-size:18px;box-shadow:0 6px 20px #0005}@keyframes pulse{50%{transform:scale(1.12)}}
+h1{font-size:clamp(42px,9vw,76px);font-weight:normal;line-height:1.02;margin:18px 0;color:#fff0e9}h1 span{color:var(--pink);font-style:italic}.sub{color:var(--muted);font:15px/1.7 Arial,sans-serif;max-width:450px;margin:18px auto 28px}
+.btn{border:1px solid var(--gold);border-radius:999px;padding:14px 24px;background:linear-gradient(90deg,#ff6eaa,#d94c92);color:white;box-shadow:0 8px 28px #ff6eaa33;letter-spacing:.05em}.btn.secondary{background:transparent;color:var(--cream);box-shadow:none}
+section{padding:88px 0}.section-title{text-align:center;margin-bottom:36px}.section-title h2{font-size:clamp(32px,6vw,48px);font-weight:normal;margin:12px 0}.section-title p{color:var(--muted);font:14px Arial,sans-serif}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.photo{background:#fff7ed;padding:10px 10px 36px;border-radius:4px;box-shadow:0 12px 35px #0007;transform:rotate(var(--r));transition:.25s;position:relative}.photo:hover{transform:rotate(0) translateY(-7px);z-index:2}.photo img{display:block;width:100%;height:310px;object-fit:cover;background:#d9d5d3}.photo figcaption{position:absolute;bottom:10px;left:10px;right:10px;text-align:center;color:#6d5261;font:italic 14px Georgia}
+.photo:nth-child(3n) img{object-position:center 25%}.photo:nth-child(4n) img{object-position:center 35%}
+.note{text-align:center;color:var(--muted);font:13px/1.6 Arial,sans-serif;margin-top:24px}
+.cake-wrap{text-align:center;background:linear-gradient(145deg,#182345aa,#0b1430aa);border:1px solid #d9b87955;border-radius:26px;padding:40px 20px;max-width:700px;margin:auto}.cake{font-size:100px;filter:drop-shadow(0 12px 20px #ff6eaa33);margin:10px}.cake-msg{min-height:30px;color:var(--rose);font-style:italic}
+.balloons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:28px auto}.balloon{width:62px;height:78px;border:0;border-radius:50% 50% 45% 45%;color:#fff;font:22px Arial;box-shadow:inset -8px -9px 12px #0002,0 8px 18px #0004;position:relative;transition:.2s}.balloon:after{content:"";position:absolute;left:50%;bottom:-17px;height:18px;border-left:1px solid #ddd9}.balloon:nth-child(1){background:#f06da7}.balloon:nth-child(2){background:#e6c16f}.balloon:nth-child(3){background:#7d8ed2}.balloon:nth-child(4){background:#bd83c9}.balloon:nth-child(5){background:#e78c76}.balloon.popped{transform:scale(0);opacity:0}
+.letter-area{max-width:700px;margin:auto;text-align:center}.envelope{margin:30px auto;width:min(340px,90%);height:210px;background:#f3d9d5;position:relative;border-radius:8px;box-shadow:0 20px 40px #0006;display:grid;place-items:center;color:#8a4565;cursor:pointer;overflow:hidden}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#e8c1c1 50%),linear-gradient(215deg,transparent 49%,#f8e7df 50%)}.envelope span{position:relative;z-index:1;font-size:40px}.letter{display:none;text-align:left;background:#fff1e7;color:#5d4050;padding:30px;border-radius:8px;line-height:1.8;box-shadow:0 16px 45px #0006;font-size:16px}.letter.open{display:block;animation:rise .5s}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:45px 15px 65px;color:var(--muted);font:13px Arial,sans-serif}footer b{color:var(--pink)}
+#surprise{display:none}#surprise.show{display:block}.topline{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 25px}.topline a{color:var(--rose);font:12px Arial,sans-serif;text-decoration:none;border:1px solid #ffffff24;border-radius:30px;padding:9px 14px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}@media(max-width:700px){.gallery{grid-template-columns:repeat(2,1fr);gap:14px}.photo{padding:7px 7px 30px}.photo img{height:230px}.hero-card{padding:42px 18px}section{padding:65px 0}}
+@media(max-width:420px){.gallery{grid-template-columns:1fr 1fr}.photo img{height:190px}.photo:nth-child(odd){--r:-1.5deg}.photo:nth-child(even){--r:1.5deg}}
+
+.password-form{display:grid;gap:14px;max-width:340px;margin:24px auto 0}
+.password-form input{width:100%;padding:15px 18px;border:1px solid #e9c77a88;border-radius:999px;background:#ffffff12;color:var(--cream);font:15px Arial,sans-serif;text-align:center}
+#passwordError{min-height:20px;color:#ffb4ce;font:13px Arial,sans-serif}
+.journey-step{display:none;min-height:82svh;animation:stepIn .65s ease both}
+.journey-step.active{display:block}
+@keyframes stepIn{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:none}}
+.step-next{display:block;margin:28px auto 0}
+#surprise .topline{display:none}
+#surprise footer,#surprise .to-top{display:none}
+#surprise.final-stage footer,#surprise.final-stage .to-top{display:block}
+.music-control{position:fixed;right:16px;bottom:16px;z-index:30;border:1px solid #e9c77a88;background:#111b3bee;color:var(--cream);border-radius:999px;padding:11px 16px;font:13px Arial,sans-serif}
+
+/* Full-screen cinematic horizontal scene transitions */
+#home.scene-exit{animation:sceneOutLeft .58s cubic-bezier(.7,0,.2,1) both}
+#surprise{position:relative;min-height:100svh}
+#surprise .journey-step{min-height:100svh;width:100%;padding:72px max(4%,calc((100% - 1080px)/2));}
+#surprise .journey-step.active{display:block;animation:sceneInRight .72s cubic-bezier(.2,.75,.25,1) both}
+#surprise .journey-step.scene-exit{display:block;position:absolute;inset:0;animation:sceneOutLeft .58s cubic-bezier(.7,0,.2,1) both;pointer-events:none}
+@keyframes sceneInRight{from{opacity:0;transform:translateX(100vw)}to{opacity:1;transform:translateX(0)}}
+@keyframes sceneOutLeft{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-100vw)}}
+@media(max-width:700px){#surprise .journey-step{padding:60px 4%}}
+
+</style>
+</head>
+<body>
+<div id="passwordGate" class="hero"><div class="hero-card">
+<div class="eyebrow">a little surprise is waiting</div><div class="heart">♥</div>
+<h1>Just for <span>you</span></h1><p class="sub">A tiny secret before your birthday surprise begins.</p>
+<form id="passwordForm" class="password-form">
+<input id="birthdayPassword" type="password" inputmode="numeric" placeholder="Enter the secret password" aria-label="Secret password" required>
+<button class="btn" type="submit">Unlock my surprise ♡</button><p id="passwordError" role="alert"></p></form></div></div>
+<header class="hero" id="home" style="display:none">
+ <div class="hero-card">
+  <div class="eyebrow">a little surprise made with love</div>
+  <div class="heart">♥</div>
+  <h1>Happy Birthday,<br><span>Wifey!</span></h1>
+  <p class="sub">A tiny corner of the internet, made just for you. Every little thing here is a reminder of how special you are to me.</p>
+  <button class="btn" id="openBtn">Open your surprise ♡</button>
+  <div class="eyebrow" style="margin-top:26px;letter-spacing:.12em">tap to begin</div><div class="countdown" id="countdown" aria-label="Birthday countdown"><div><strong id="days">--</strong><small>Days</small></div><div><strong id="hours">--</strong><small>Hours</small></div><div><strong id="minutes">--</strong><small>Minutes</small></div><div><strong id="seconds">--</strong><small>Seconds</small></div></div>
+ </div>
+</header>
+<button class="music-control" id="musicToggle">♫ Play music</button><audio id="bgMusic" src="assets/healing-ambient-piano.mp3" loop preload="none"></audio>
+<main id="surprise">
+ <div class="topline"><a href="#memories">Our memories</a><a href="#cake">Make a wish</a><a href="#letter">Your letter</a></div>
+ <section id="memories" class="wrap journey-step">
+  <div class="section-title"><div class="eyebrow">little moments, big feelings</div><h2>Our Memory Lane</h2><p>A few snapshots I never want to forget.</p></div>
+  <div class="gallery" id="gallery"></div>
+  <p class="note">Some moments are blurry, but what they mean to me never will be. ♡</p><button class="btn step-next" id="memoriesNext">Continue to your wish ♡</button>
+ </section>
+ <section id="cake" class="wrap journey-step">
+  <div class="section-title"><div class="eyebrow">your special moment</div><h2>Make a Wish</h2><p>Tap the cake when you're ready to make your birthday wish.</p></div>
+  <div class="cake-wrap"><div class="cake" id="cakeEmoji">🎂</div><p class="cake-msg" id="cakeMsg">One wish, just for you.</p><button class="btn" id="wishBtn">Make a wish ✨</button><button class="btn secondary step-next" id="cakeNext" style="display:none">Continue ♡</button></div>
+ </section>
+ <section class="wrap journey-step" id="balloonStep">
+  <div class="section-title"><div class="eyebrow">a little birthday magic</div><h2>Pop a Balloon</h2><p>Each balloon has a tiny message waiting inside.</p></div>
+  <div class="balloons" id="balloons"></div><p class="cake-msg" id="balloonMsg" style="text-align:center;min-height:32px"></p><p id="balloonProgress" class="note">Pop all 5 balloons to unlock the next surprise.</p>
+ </section>
+ <section id="letter" class="wrap journey-step">
+  <div class="section-title"><div class="eyebrow">open when you want a reminder</div><h2>A Letter for You</h2><p>There's something I wanted you to read.</p></div>
+  <div class="letter-area"><div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the letter"><span>♥</span></div>
+   <article class="letter" id="letterText">
+    <p>My dearest Wifey,</p>
+    <p>Happy Birthday! I hope today brings you the same warmth and happiness that you bring into my life. Even when distance keeps us apart, you are part of so many of my favourite thoughts and moments.</p>
+    <p>Thank you for being you — for the smiles, the little conversations, the memories, and all the moments that mean more than words can explain. I hope this new year of your life is full of peace, laughter, beautiful surprises, and everything your heart is wishing for.</p>
+    <p>Keep smiling, keep being your lovely self, and never forget how special you are to me.</p>
+    <p>With all my love,<br><b>Yours ♥</b></p>
+   </article>
+  </div>
+ </section>
+ <footer>Made with <b>♥</b> for Wifey. Always a favourite chapter.</footer><button class="to-top" id="toTop" aria-label="Back to top">↑</button><div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview"><button id="closeLightbox" aria-label="Close photo preview">×</button><img id="lightboxImg" alt="Expanded memory photo"></div>
+</main>
+<script>
+const photos=[
+ ["assets/memory-01.jpg","A silly little moment"],
+ ["assets/memory-02.jpg","That smile ♡"],
+ ["assets/memory-03.jpg","A favourite face"],
+ ["assets/memory-04.jpg","Looking lovely"],
+ ["assets/memory-05.jpg","A little candid"],
+ ["assets/memory-06.jpg","One of my favourites"],
+ ["assets/memory-07.jpg","Us, together"],
+ ["assets/memory-08.jpg","A beautiful day"],
+ ["assets/memory-09.jpg","A moment to keep"],
+ ["assets/memory-10.jpg","Sweet memories"],
+ ["assets/memory-11.jpg","Always you"]
+];
+const gallery=document.getElementById('gallery');
+photos.forEach(([src,caption],i)=>{const f=document.createElement('figure');f.className='photo';f.style.setProperty('--r',i%2?'-1.5deg':'1.5deg');const im=document.createElement('img');im.src=src;im.alt=caption;im.loading='lazy';im.addEventListener('click',()=>{document.getElementById('lightboxImg').src=src;document.getElementById('lightboxImg').alt=caption;document.getElementById('lightbox').classList.add('show')});const c=document.createElement('figcaption');c.textContent=caption;f.append(im,c);gallery.append(f)});
+
+const stages=['memories','cake','balloonStep','letter'];
+let currentStage=null, stageBusy=false;
+function showStage(id){
+ if(stageBusy || currentStage===id)return;
+ const next=document.getElementById(id), previous=currentStage?document.getElementById(currentStage):null;
+ stageBusy=true;
+ if(previous){previous.classList.remove('active');previous.classList.add('scene-exit');}
+ next.classList.remove('scene-exit');next.classList.add('active');
+ currentStage=id;
+ document.getElementById('surprise').classList.toggle('final-stage',id==='letter');
+ window.scrollTo({top:0,behavior:'instant'});
+ setTimeout(()=>{if(previous)previous.classList.remove('scene-exit');stageBusy=false;},650);
+}
+document.getElementById('passwordForm').addEventListener('submit',e=>{e.preventDefault();if(document.getElementById('birthdayPassword').value==='0987'){document.getElementById('passwordGate').style.display='none';document.getElementById('home').style.display='grid';}else{document.getElementById('passwordError').textContent='That password is not quite right. Try again ♡';document.getElementById('birthdayPassword').value='';}});
+document.getElementById('openBtn').addEventListener('click',()=>{
+ const home=document.getElementById('home');
+ home.classList.add('scene-exit');
+ setTimeout(()=>{home.style.display='none';home.classList.remove('scene-exit');document.getElementById('surprise').classList.add('show');showStage('memories');},560);
+});
+document.getElementById('memoriesNext').addEventListener('click',()=>showStage('cake'));
+document.getElementById('cakeNext').addEventListener('click',()=>showStage('balloonStep'));
+
+const lb=document.getElementById('lightbox');document.getElementById('closeLightbox').addEventListener('click',()=>lb.classList.remove('show'));lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('show')});document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('show')});
+document.getElementById('toTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const birthday=new Date('2026-11-10T00:00:00');function tick(){let diff=Math.max(0,birthday-new Date());const vals=[Math.floor(diff/86400000),Math.floor(diff/3600000)%24,Math.floor(diff/60000)%60,Math.floor(diff/1000)%60];['days','hours','minutes','seconds'].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,'0'));if(diff===0)document.getElementById('countdown').innerHTML='<div><strong>♡</strong><small>It is your day!</small></div>'}tick();setInterval(tick,1000);
+function floatHeart(){const h=document.createElement('span');h.className='float-heart';h.textContent='♥';h.style.left=(Math.random()*100)+'vw';h.style.fontSize=(12+Math.random()*18)+'px';document.body.append(h);setTimeout(()=>h.remove(),8000)}setInterval(floatHeart,2600);
+document.getElementById('wishBtn').addEventListener('click',()=>{document.getElementById('cakeEmoji').textContent='🕯️🎂✨';document.getElementById('cakeMsg').textContent='Wish made! May this year be extra kind to you. ♥';document.getElementById('wishBtn').textContent='Happy Birthday, Wifey!';document.getElementById('cakeNext').style.display='inline-block';});
+const messages=['You make ordinary days special.','Your smile is one of my favourite things.','I am always cheering for you.','You deserve all the good things.','Distance cannot shrink a good memory.'];
+const balloonBox=document.getElementById('balloons');
+
+let poppedCount=0;
+messages.forEach((m,i)=>{const b=document.createElement('button');b.className='balloon';b.setAttribute('aria-label','Pop balloon '+(i+1));b.textContent='♥';b.addEventListener('click',()=>{if(b.classList.contains('popped'))return;document.getElementById('balloonMsg').textContent=m;b.classList.add('popped');poppedCount++;document.getElementById('balloonProgress').textContent=poppedCount+' of 5 balloons popped.';if(poppedCount===5){document.getElementById('balloonProgress').textContent='Your letter is waiting… ♥';setTimeout(()=>showStage('letter'),1400);}});balloonBox.append(b)});
+
+
+const music=document.getElementById('bgMusic'),musicToggle=document.getElementById('musicToggle');music.volume=.22;
+musicToggle.addEventListener('click',async()=>{try{if(music.paused){await music.play();musicToggle.textContent='♫ Pause music';}else{music.pause();musicToggle.textContent='♫ Play music';}}catch(e){musicToggle.textContent='♫ Add piano track';}});
+
+function openLetter(){document.getElementById('letterText').classList.add('open');document.getElementById('envelope').style.display='none'}
+document.getElementById('envelope').addEventListener('click',openLetter);document.getElementById('envelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+</script>
+</body></html>
